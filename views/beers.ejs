@@ -1,0 +1,19 @@
+<div class="ctn">
+    <h1>Beers</h1>
+
+
+    <table id="allBeersTable">
+        <th width="100px">Name</th>
+        <th width="500px">Description</th>
+        <th width="150px">Image</th>
+        <th width="100px">Tagline</th>
+
+
+        <% allBeers.forEach(function(beer){ %>
+            <tr>
+                <%- include('./partials/beerInfo.ejs', {beer:beer}) %> 
+            </tr>
+            <% }); %>
+
+    </table>
+</div>

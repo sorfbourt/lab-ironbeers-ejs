@@ -1,0 +1,25 @@
+<div class="ctn">
+
+
+
+    <table id="randomBeersTable">
+        <th width="100px">Name</th>
+        <th width="500px">Description</th>
+        <th width="150px">Image</th>
+        <th width="100px">Tagline</th>
+        <th width="100px">Food Pairing</th>
+        <th width="100px">Brewers Tips</th>
+
+
+            <tr>
+                <%- include('./partials/beerInfo.ejs', {beer:oneRandomBeer}) %> 
+
+                <td><%= oneRandomBeer.food_pairing %></td>
+                <td><%= oneRandomBeer.brewers_tips %></td>
+            </tr>
+
+    </table>
+
+
+
+</div>
