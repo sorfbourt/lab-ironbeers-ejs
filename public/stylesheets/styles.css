@@ -17,6 +17,7 @@ nav ul li {
 }
 nav ul li a {
     color:#fff;
+    text-decoration: none;
 }
 
 nav ul{
@@ -25,6 +26,7 @@ nav ul{
 }
 nav {
     background-color: #2081c3;
+    box-shadow:2px 2px 5px;
     
 }
 
@@ -45,6 +47,7 @@ img {
 .blueButton{
     width: 300px;
     background-color: #2081c3;
+    box-shadow:2px 2px 5px;
     color:white;
     padding: 20px;
     margin: 20px;
