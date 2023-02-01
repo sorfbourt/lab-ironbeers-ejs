@@ -1,5 +1,5 @@
 <div class="ctn">
-
+    <h1>Random Beer</h1>
 
 
     <table id="randomBeersTable">
@@ -14,7 +14,18 @@
             <tr>
                 <%- include('./partials/beerInfo.ejs', {beer:oneRandomBeer}) %> 
 
-                <td><%= oneRandomBeer.food_pairing %></td>
+                <td>
+                    <ul>
+                    <%oneRandomBeer.food_pairing.forEach(pairing => { %>
+                        <li><%-pairing%></li>
+
+
+                    <%})%>
+                </ul>
+                 
+                
+                
+                </td>
                 <td><%= oneRandomBeer.brewers_tips %></td>
             </tr>
 

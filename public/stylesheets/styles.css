@@ -32,7 +32,11 @@ nav {
 
 table{
     border:1px solid black;
-    width:600px;
+    width:1200px;
+}
+
+td{
+    padding:10px;
 }
 
 .ctn{
